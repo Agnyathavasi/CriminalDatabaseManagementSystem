@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newcase">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/firid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:hint="F.I.R ID"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/nameofcriminal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:hint="Name of Criminal"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/courtname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:hint="Court name"
+            android:inputType="text" />
+
+
+        <Spinner
+            android:id="@+id/court_typ"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/courtname"
+            android:layout_marginTop="9dp"
+
+            android:entries="@array/CourtType" />
+
+        <EditText
+            android:id="@+id/punishment_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:hint="Punishment time"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/captured_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:hint="Captured By(ID of police officer)"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:hint="Height of Criminal (cm)"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="9dp"
+            android:entries="@array/sex"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:id="@+id/imageofcriminal"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:elevation="5dp"
+            android:scaleType="centerInside" />
+
+        <Button
+            android:id="@+id/chooseimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/roundedbotton2"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+
+            android:text="Upload an Image"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/registercriminal"
+            android:layout_width="142dp"
+            android:layout_height="59dp"
+            android:layout_below="@+id/imageofcriminal"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="120dp"
+            android:background="@drawable/roundedbotton2"
+            android:fontFamily="times new roman"
+            android:text="Register"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registercriminal"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

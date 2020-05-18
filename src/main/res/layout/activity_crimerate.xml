@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".Crimerate"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crime Rate : 0.2324\n (Cases solved/Cases registered)"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="P/C ratio : 1.223\n(No. of Police officers/No. of criminals)"
+        android:textColor="#000"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="17sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No of Unsolved cases :"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_weight="1"
+
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No. of Criminals arrested :"
+        android:textColor="#000"
+        android:gravity="center"
+        android:id="@+id/criminals"
+        android:layout_weight="1"
+        android:textSize="18sp"
+        />
+
+
+
+
+</LinearLayout>

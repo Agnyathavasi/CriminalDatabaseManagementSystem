@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="210dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="10dp"
+        android:text=""
+        android:textAlignment="center"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="137dp"
+        android:layout_height="158dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/roundedbutton"
+        android:contentDescription="@string/app_name"
+        android:elevation="10dp"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/newcase"
+        android:onClick="new_case"/>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="137dp"
+        android:layout_height="158dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/roundedbutton"
+        android:contentDescription="@string/app_name"
+        android:elevation="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/cases"
+        android:onClick="cases"/>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="137dp"
+        android:layout_height="158dp"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/roundedbutton"
+        android:contentDescription="@string/app_name"
+        android:elevation="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/criminal"
+        android:onClick="criminals"/>
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="137dp"
+        android:layout_height="158dp"
+        android:layout_below="@+id/imageButton2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/roundedbutton"
+        android:contentDescription="@string/app_name"
+        android:elevation="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/police"
+        android:onClick="police"/>
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="137dp"
+        android:layout_height="158dp"
+        android:layout_below="@+id/imageButton3"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        android:padding="5dp"
+        android:background="@drawable/roundedbutton"
+        android:contentDescription="@string/app_name"
+        android:elevation="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/courtdetails"
+        android:onClick="court_details"
+        />
+
+
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageButton5"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="100dp"
+            android:padding="20dp"
+            android:elevation="3dp"
+            android:background="@drawable/roundedbotton2"
+            android:text="logout"
+            android:textColor="#fff"
+            android:onClick="signout"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/logout"/>
+
+    </RelativeLayout>
+
+</ScrollView>

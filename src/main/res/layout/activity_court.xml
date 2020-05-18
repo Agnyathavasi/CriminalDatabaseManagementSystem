@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Court">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/gradient"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:onClick="supreme"
+            android:fontFamily="monospace"
+            android:textSize="23pt"
+            android:textColor="#fff"
+            android:text="National\nLevel"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:textSize="23pt"
+            android:onClick="high"
+            android:textStyle="bold"
+            android:background="@drawable/gradient"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:text="State\nLevel"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:onClick="district"
+            android:gravity="center"
+            android:textSize="23pt"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:background="@drawable/gradient"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:text="District\nLevel"/>
+
+    </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/circle"
+            android:elevation="7dp"
+            android:onClick="add_new_criminal"
+            android:padding="11dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/plus" />
+
+</RelativeLayout>
+
+

@@ -1,0 +1,31 @@
+<resources>
+    <array name="Complaint_type">
+        <item>Complaint type</item>
+        <item>Absconding</item>
+        <item>Murder</item>
+        <item>Attempt to murder</item>
+        <item>Robbery</item>
+        <item>Drug related</item>
+        <item>Rowdy-sm</item>
+        <item>Other...</item>
+    </array>
+
+    <array name="CourtType">
+        <item>Court Type</item>
+        <item>National</item>
+        <item>State</item>
+        <item>District</item>
+    </array>
+    <array name="sex">
+        <item>Sex</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </array>
+    <string name="cases">Cases</string>
+    <string name="crime_patrol">Crime Patrol</string>
+    <string name="my_dashboard">My Dashboard</string>
+    <string name="todo">TODO</string>
+    <string name="app_name">Crime Patrol</string>
+    <string name="img">Image Uploaded Successfully</string>
+</resources>
